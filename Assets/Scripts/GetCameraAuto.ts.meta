@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: df8a7900ad83f194489e4eee9b589de4
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass GetCameraAuto extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        new UnityEngine_1.WaitForSeconds(0.5);\r\n       
+    this.playerCam = UnityEngine_1.GameObject.Find(''CameraParent'').GetComponentInChildren($typeof(UnityEngine_1.Camera));\r\n       
+    this.canvas.worldCamera = this.playerCam;\r\n    }\r\n}\r\nexports.default =
+    GetCameraAuto;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2V0Q2FtZXJhQXV0by5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdldENhbWVyYUF1dG8udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBd0U7QUFDeEUsaURBQXFEO0FBR3JELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFJNUQsS0FBSztRQUNELElBQUksNEJBQWMsQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUN4QixJQUFJLENBQUMsU0FBUyxHQUFHLHdCQUFVLENBQUMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxDQUFDLHNCQUFzQixTQUFDLG9CQUFNLEVBQUcsQ0FBQztRQUNsRixJQUFJLENBQUMsTUFBTSxDQUFDLFdBQVcsR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDO0lBQzdDLENBQUM7Q0FFSjtBQVZELGdDQVVDIn0=","assetPath":"Assets/Scripts/GetCameraAuto.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"GetCameraAuto","description":""},"isCompiled":true}'
+  typescriptHash: e9a5e3bf3516d5afb2c1f94a2a0aa51d

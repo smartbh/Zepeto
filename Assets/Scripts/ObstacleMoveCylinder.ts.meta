@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: aa880b79026257b40aea5d48c2859de5
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ObstacleMoveCylinder extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.direction
+    = 1;\r\n    }\r\n    Update() {\r\n        if (this.obstacle.transform.localPosition.y
+    < this.MinHeight) {\r\n            this.direction = 1;\r\n        }\r\n       
+    else if (this.obstacle.transform.localPosition.y > this.MaxHeight) {\r\n           
+    this.direction = -1;\r\n        }\r\n        this.obstacle.transform.Translate(0,
+    1 * this.speed * UnityEngine_1.Time.deltaTime * this.direction, 0, UnityEngine_1.Space.World);\r\n   
+    }\r\n}\r\nexports.default = ObstacleMoveCylinder;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT2JzdGFjbGVNb3ZlQ3lsaW5kZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPYnN0YWNsZU1vdmVDeWxpbmRlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUErRDtBQUMvRCxpREFBcUQ7QUFFckQsTUFBcUIsb0JBQXFCLFNBQVEscUNBQXFCO0lBT25FLEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQztJQUN2QixDQUFDO0lBRUQsTUFBTTtRQUNGLElBQUksSUFBSSxDQUFDLFFBQVEsQ0FBQyxTQUFTLENBQUMsYUFBYSxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsU0FBUyxFQUFFO1lBQzFELElBQUksQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDO1NBQ3RCO2FBQ0ksSUFBSSxJQUFJLENBQUMsUUFBUSxDQUFDLFNBQVMsQ0FBQyxhQUFhLENBQUMsQ0FBQyxHQUFHLElBQUksQ0FBQyxTQUFTLEVBQUU7WUFDL0QsSUFBSSxDQUFDLFNBQVMsR0FBRyxDQUFDLENBQUMsQ0FBQztTQUN2QjtRQUVELElBQUksQ0FBQyxRQUFRLENBQUMsU0FBUyxDQUFDLFNBQVMsQ0FBQyxDQUFDLEVBQUUsQ0FBQyxHQUFHLElBQUksQ0FBQyxLQUFLLEdBQUcsa0JBQUksQ0FBQyxTQUFTLEdBQUcsSUFBSSxDQUFDLFNBQVMsRUFBRSxDQUFDLEVBQUUsbUJBQUssQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUUzRyxDQUFDO0NBRUo7QUF2QkQsdUNBdUJDIn0=","assetPath":"Assets/Scripts/ObstacleMoveCylinder.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"obstacle","type":"UnityEngine.GameObject","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"speed","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"MaxHeight","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"MinHeight","type":"System.Single","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"ObstacleMoveCylinder","description":""},"isCompiled":true}'
+  typescriptHash: 4e93032aa3db6c4e4a5be526c00cf121

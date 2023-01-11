@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 53ced0480488b9d4ab61c0ebe3a40f4c
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass DestroyCanvas extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    OnTriggerEnter(collider) {\r\n       
+    if (collider.tag == \"Player\") {\r\n            this.btnUI.onClick.AddListener(()
+    => {\r\n                UnityEngine_1.GameObject.Destroy(this.targetCanv);\r\n           
+    });\r\n        }\r\n    }\r\n}\r\nexports.default = DestroyCanvas;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVzdHJveUNhbnZhcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkRlc3Ryb3lDYW52YXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBZ0Q7QUFFaEQsaURBQXFEO0FBRXJELE1BQXFCLGFBQWMsU0FBUSxxQ0FBcUI7SUFLNUQsY0FBYyxDQUFDLFFBQVE7UUFDbkIsSUFBSSxRQUFRLENBQUMsR0FBRyxJQUFJLFFBQVEsRUFBRTtZQUMxQixJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO2dCQUNoQyx3QkFBVSxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsVUFBVSxDQUFDLENBQUM7WUFDeEMsQ0FBQyxDQUFDLENBQUE7U0FDTDtJQUNMLENBQUM7Q0FFSjtBQWJELGdDQWFDIn0=","assetPath":"Assets/Scripts/DestroyCanvas.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"targetCanv","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"btnUI","type":"UnityEngine.UI.Button","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"DestroyCanvas","description":""},"isCompiled":true}'
+  typescriptHash: 39a1ebb8e57f59c165ebc2e89b8cb62f

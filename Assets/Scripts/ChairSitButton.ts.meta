@@ -1,0 +1,53 @@
+fileFormatVersion: 2
+guid: 2a833429479f5914d89f1b77808204d3
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Character_Controller_1 = require(\\\"ZEPETO.Character.Controller\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nclass ChairSitButton extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    OnTriggerEnter(collider) {\\r\\n       
+    this.Players = collider.gameObject.GetComponent($typeof(ZEPETO_Character_Controller_1.ZepetoCharacter));\\r\\n       
+    // 1. collider \uFFFD\uFFFD\xFC\uFFFD\uFFFD hash \uFFFD\uFFFD\uFFFD\uFFFD clientStarter\uFFFD\uFFFD
+    \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD hash \uFFFD\uFFFD(\uFFFD\uFFFD\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD
+    \uFFFD\uFFFD\uFFFD\uFFFD)\uFFFD\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \uFFFD\uFFFD\\r\\n       
+    // 2. collider \uFFFD\uFFFD\xFC\uFFFD\uFFFD \uFFFD\xB1\u05F0\uFFFD player\uFFFD\uFFFD\uFFFD\uFFFD
+    \uFFFD\u01F4\uFFFD\\r\\n        // 3. 1,2\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD
+    \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u03F8\uFFFD collider\uFFFD\uFFFD\xFC\uFFFD\uFFFD
+    Getcomponent<Animator>().SetTrigger(\\\"Sit\\\"); Sit \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD
+    \uFFFD\uFFFD\u022F\\r\\n        if (collider.tag == \\\"Player\\\") {\\r\\n           
+    this.btnUI.onClick.RemoveAllListeners();\\r\\n            this.btnUI.onClick.AddListener(()
+    => {\\r\\n                console.log(\\\"isSit = \\\" + this.isSit);\\r\\n               
+    new UnityEngine_1.WaitForSeconds(0.001);\\r\\n                if (!this.isSit)
+    { //\uFFFD\u027E\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \uFFFD\u02B4\u0678\uFFFD\\r\\n                   
+    this.StartCoroutine(this.SendPlayer(this.Players)); //\uFFFD\xF7\uFFFD\uFFFD\u033E\uEE26
+    \uFFFD\uFFFD\uFFFD\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\\r\\n                    console.log(\\\"move
+    to char\\\");\\r\\n                    this.Players.SetGesture(this.sitClip);\\r\\n                   
+    console.log('btnUI onClick');\\r\\n                    this.isSit = true; //\uFFFD\u027E\uFFFD\uFFFD\u05B4\uFFFD.\\r\\n               
+    }\\r\\n                else {\\r\\n                    this.Players.CancelGesture();\\r\\n                   
+    this.isSit = false; //\uFFFD\u027E\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD \uFFFD\u02B4\uFFFD.\\r\\n               
+    }\\r\\n            });\\r\\n        }\\r\\n    }\\r\\n    *SendPlayer(collider)
+    {\\r\\n        //this.Players.characterController.enabled = false;\\r\\n       
+    collider.transform.position = new UnityEngine_1.Vector3(this.Chair.transform.position.x
+    + this.ChairX, this.Chair.transform.position.y + this.ChairHeight, this.Chair.transform.position.z
+    + this.ChairZ);\\r\\n        collider.transform.localEulerAngles = new UnityEngine_1.Vector3(0,
+    this.Chair.transform.rotation.y - this.ChairSitRotate, 0);\\r\\n        //this.Players.characterController.enabled
+    = true;\\r\\n        yield new UnityEngine_1.WaitForSeconds(0.001);\\r\\n   
+    }\\r\\n}\\r\\nexports.default = ChairSitButton;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhaXJTaXRCdXR0b24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJDaGFpclNpdEJ1dHRvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLDZDQUEyRjtBQUUzRiw2RUFBNkU7QUFDN0UsaURBQXFEO0FBRXJELE1BQXFCLGNBQWUsU0FBUSxxQ0FBcUI7SUFXN0QsY0FBYyxDQUFDLFFBQW9CO1FBQy9CLElBQUksQ0FBQyxPQUFPLEdBQUcsUUFBUSxDQUFDLFVBQVUsQ0FBQyxZQUFZLFNBQUMsNkNBQWUsRUFBRyxDQUFDO1FBRW5FLDBGQUEwRjtRQUMxRix3Q0FBd0M7UUFDeEMsa0dBQWtHO1FBQ2xHLElBQUksUUFBUSxDQUFDLEdBQUcsSUFBSSxRQUFRLEVBQUU7WUFDMUIsSUFBSSxDQUFDLEtBQUssQ0FBQyxPQUFPLENBQUMsa0JBQWtCLEVBQUUsQ0FBQztZQUN4QyxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO2dCQUNoQyxPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7Z0JBQ3JDLElBQUksNEJBQWMsQ0FBQyxLQUFLLENBQUMsQ0FBQztnQkFDMUIsSUFBSSxDQUFDLElBQUksQ0FBQyxLQUFLLEVBQUUsRUFBRSxjQUFjO29CQUM3QixJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQyxrQkFBa0I7b0JBQ3RFLE9BQU8sQ0FBQyxHQUFHLENBQUMsY0FBYyxDQUFDLENBQUM7b0JBQzVCLElBQUksQ0FBQyxPQUFPLENBQUMsVUFBVSxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQztvQkFDdEMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxlQUFlLENBQUMsQ0FBQztvQkFDN0IsSUFBSSxDQUFDLEtBQUssR0FBRyxJQUFJLENBQUMsQ0FBQyxTQUFTO2lCQUMvQjtxQkFDUTtvQkFDTCxJQUFJLENBQUMsT0FBTyxDQUFDLGFBQWEsRUFBRSxDQUFDO29CQUM3QixJQUFJLENBQUMsS0FBSyxHQUFHLEtBQUssQ0FBQyxDQUFDLGNBQWM7aUJBQ3JDO1lBQ0wsQ0FBQyxDQUFDLENBQUM7U0FDTjtJQUNMLENBQUM7SUFFRCxDQUFDLFVBQVUsQ0FBQyxRQUFRO1FBQ2hCLG1EQUFtRDtRQUNuRCxRQUFRLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxJQUFJLHFCQUFPLENBQUMsSUFBSSxDQUFDLEtBQUssQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsTUFBTSxFQUFFLElBQUksQ0FBQyxLQUFLLENBQUMsU0FBUyxDQUFDLFFBQVEsQ0FBQyxDQUFDLEdBQUcsSUFBSSxDQUFDLFdBQVcsRUFBRSxJQUFJLENBQUMsS0FBSyxDQUFDLFNBQVMsQ0FBQyxRQUFRLENBQUMsQ0FBQyxHQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUM1TCxRQUFRLENBQUMsU0FBUyxDQUFDLGdCQUFnQixHQUFHLElBQUkscUJBQU8sQ0FBQyxDQUFDLEVBQUUsSUFBSSxDQUFDLEtBQUssQ0FBQyxTQUFTLENBQUMsUUFBUSxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsY0FBYyxFQUFFLENBQUMsQ0FBQyxDQUFDO1FBQy9HLGtEQUFrRDtRQUNsRCxNQUFNLElBQUksNEJBQWMsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNwQyxDQUFDO0NBRUo7QUE3Q0QsaUNBNkNDIn0=\",\"assetPath\":\"Assets/Scripts/ChairSitButton.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.UI\",\"name\":\"btnUI\",\"type\":\"UnityEngine.UI.Button\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"Chair\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.AnimationModule\",\"name\":\"sitClip\",\"type\":\"UnityEngine.AnimationClip\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"ChairHeight\",\"type\":\"System.Single\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"ChairX\",\"type\":\"System.Single\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"ChairZ\",\"type\":\"System.Single\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"ChairSitRotate\",\"type\":\"System.Single\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"isSit\",\"type\":\"System.Boolean\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"ChairSitButton\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: b6855dbb27d41f07e1e53eb66b7cd4a6

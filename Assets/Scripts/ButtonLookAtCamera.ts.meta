@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 66c73524a43bb874dafcc139ba3fadcf
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass ButtonLookAtCamera extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.ZepetoCam
+    = UnityEngine_1.GameObject.Find(''CameraParent'').GetComponentInChildren($typeof(UnityEngine_1.Camera));\r\n   
+    }\r\n    Update() {\r\n        this.transform.LookAt(this.ZepetoCam.transform);\r\n   
+    }\r\n}\r\nexports.default = ButtonLookAtCamera;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQnV0dG9uTG9va0F0Q2FtZXJhLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQnV0dG9uTG9va0F0Q2FtZXJhLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQWdEO0FBQ2hELGlEQUFxRDtBQUVyRCxNQUFxQixrQkFBbUIsU0FBUSxxQ0FBcUI7SUFHakUsS0FBSztRQUNELElBQUksQ0FBQyxTQUFTLEdBQUcsd0JBQVUsQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUMsc0JBQXNCLFNBQUMsb0JBQU0sRUFBRyxDQUFDO0lBQ3RGLENBQUM7SUFFRCxNQUFNO1FBQ0YsSUFBSSxDQUFDLFNBQVMsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQyxTQUFTLENBQUMsQ0FBQztJQUNwRCxDQUFDO0NBQ0o7QUFWRCxxQ0FVQyJ9","assetPath":"Assets/Scripts/ButtonLookAtCamera.ts","manifest":{"properties":[],"name":"ButtonLookAtCamera","description":""},"isCompiled":true}'
+  typescriptHash: 340c9721674849cc4cd5f3dacc821809

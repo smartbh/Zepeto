@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: b9b1debf8c01eda4e95822e68e07ba7e
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass FirstCanvasButton extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.buttonUI1.onClick.AddListener(()
+    => {\r\n            this.startCanvas.worldCamera = UnityEngine_1.GameObject.Find(''CameraParent'').GetComponentInChildren($typeof(UnityEngine_1.Camera));\r\n           
+    console.log(\"Button Worked!\");\r\n        });\r\n    }\r\n}\r\nexports.default
+    = FirstCanvasButton;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmlyc3RDYW52YXNCdXR0b24uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJGaXJzdENhbnZhc0J1dHRvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCw2Q0FBeUQ7QUFFekQsTUFBcUIsaUJBQWtCLFNBQVEscUNBQXFCO0lBS2hFLEtBQUs7UUFDRCxJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO1lBQ3BDLElBQUksQ0FBQyxXQUFXLENBQUMsV0FBVyxHQUFHLHdCQUFVLENBQUMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxDQUFDLHNCQUFzQixTQUFDLG9CQUFNLEVBQUcsQ0FBQztZQUNoRyxPQUFPLENBQUMsR0FBRyxDQUFDLGdCQUFnQixDQUFDLENBQUM7UUFDbEMsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0NBRUo7QUFaRCxvQ0FZQyJ9","assetPath":"Assets/Scripts/FirstCanvasButton.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"buttonUI1","type":"UnityEngine.UI.Button","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UIModule","name":"startCanvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"FirstCanvasButton","description":""},"isCompiled":true}'
+  typescriptHash: d09bebae5bcb45a34aad17f0c69a6825

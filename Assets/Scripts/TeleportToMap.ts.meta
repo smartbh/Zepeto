@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 5079b027ac1e8dc4cbb64969289680e9
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst UnityEngine = require(\"UnityEngine\");\r\nconst ZEPETO_Script_1
+    = require(\"ZEPETO.Script\");\r\nclass TeleportToEgloo extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    OnTriggerEnter(collider) {\r\n        if (collider.tag == \"Player\")\r\n           
+    this.StartCoroutine(this.SendPlayer(collider));\r\n    }\r\n    *SendPlayer(collider)
+    {\r\n        for (var i = 0; i < 6; i++) {\r\n            collider.transform.position
+    = new UnityEngine.Vector3(80, 0, 8);\r\n            yield new UnityEngine.WaitForSeconds(0.001);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = TeleportToEgloo;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVsZXBvcnRUb01hcC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRlbGVwb3J0VG9NYXAudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwyQ0FBMkM7QUFDM0MsaURBQXFEO0FBRXJELE1BQXFCLGVBQWdCLFNBQVEscUNBQXFCO0lBRTlELGNBQWMsQ0FBQyxRQUFRO1FBQ25CLElBQUksUUFBUSxDQUFDLEdBQUcsSUFBSSxRQUFRO1lBQ3hCLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDO0lBQ3ZELENBQUM7SUFFRCxDQUFDLFVBQVUsQ0FBQyxRQUFRO1FBQ2hCLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxFQUFFLEVBQUU7WUFDeEIsUUFBUSxDQUFDLFNBQVMsQ0FBQyxRQUFRLEdBQUcsSUFBSSxXQUFXLENBQUMsT0FBTyxDQUFDLEVBQUUsRUFBQyxDQUFDLEVBQUMsQ0FBQyxDQUFDLENBQUE7WUFFN0QsTUFBTSxJQUFJLFdBQVcsQ0FBQyxjQUFjLENBQUMsS0FBSyxDQUFDLENBQUM7U0FDL0M7SUFDTCxDQUFDO0NBQ0o7QUFkRCxrQ0FjQyJ9","assetPath":"Assets/Scripts/TeleportToMap.ts","manifest":{"properties":[],"name":"TeleportToEgloo","description":""},"isCompiled":true}'
+  typescriptHash: 628f609addec12f1c65a15862969b58d

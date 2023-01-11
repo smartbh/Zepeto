@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: f8e6e347b85aec34eb3d76356e7ac595
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nclass ChangeLightBulb
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    Start() {\\r\\n       
+    this.rend = this.GetComponent($typeof(UnityEngine_1.Renderer));\\r\\n       
+    this.rend.sharedMaterial = this.LightBulbMats[0];\\r\\n        this.changeNum
+    = 0;\\r\\n        this.sec = 0.5;\\r\\n        this.StartCoroutine(this.changeLightBulbMaterial());\\r\\n   
+    }\\r\\n    *changeLightBulbMaterial() {\\r\\n        while (true) {\\r\\n           
+    if (this.changeNum == 0) { //\uFFFD\uFFFD\xF3\uFFFD\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u03FD\uFFFD\\r\\n               
+    yield new UnityEngine_1.WaitForSeconds(this.sec);\\r\\n                this.rend.material
+    = this.LightBulbMats[1]; //\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\r\\n               
+    this.changeNum = 1; //changeNum\uFFFD\uFFFD \uFFFD\u0672\uFFFD\uFFFD\u05B1\uFFFD\\r\\n           
+    }\\r\\n            else { //\uFFFD\uFFFD\uFFFD\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u03FD\uFFFD\\r\\n               
+    yield new UnityEngine_1.WaitForSeconds(this.sec);\\r\\n                this.rend.material
+    = this.LightBulbMats[0]; //\uFFFD\u067D\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\r\\n               
+    this.changeNum = 0; //changeNum\uFFFD\uFFFD \uFFFD\u067D\uFFFD \uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\r\\n           
+    }\\r\\n            //\uFFFD\uFFFD\uFFFD\uFFFD \uFFFD\u077A\uFFFD\\r\\n       
+    }\\r\\n    }\\r\\n}\\r\\nexports.default = ChangeLightBulb;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhbmdlTGlnaHRCdWxiLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ2hhbmdlTGlnaHRCdWxiLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsNkNBQWlFO0FBQ2pFLGlEQUFxRDtBQUdyRCxNQUFxQixlQUFnQixTQUFRLHFDQUFxQjtJQU05RCxLQUFLO1FBQ0QsSUFBSSxDQUFDLElBQUksR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHNCQUFRLEVBQUcsQ0FBQztRQUMxQyxJQUFJLENBQUMsSUFBSSxDQUFDLGNBQWMsR0FBRyxJQUFJLENBQUMsYUFBYSxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ2pELElBQUksQ0FBQyxTQUFTLEdBQUcsQ0FBQyxDQUFDO1FBQ25CLElBQUksQ0FBQyxHQUFHLEdBQUcsR0FBRyxDQUFDO1FBQ2YsSUFBSSxDQUFDLGNBQWMsQ0FBQyxJQUFJLENBQUMsdUJBQXVCLEVBQUUsQ0FBQyxDQUFDO0lBQ3hELENBQUM7SUFJRCxDQUFDLHVCQUF1QjtRQUNwQixPQUFPLElBQUksRUFBRTtZQUNULElBQUksSUFBSSxDQUFDLFNBQVMsSUFBSSxDQUFDLEVBQUUsRUFBRSxlQUFlO2dCQUN0QyxNQUFNLElBQUksNEJBQWMsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7Z0JBQ25DLElBQUksQ0FBQyxJQUFJLENBQUMsUUFBUSxHQUFHLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxZQUFZO2dCQUN4RCxJQUFJLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQyxDQUFDLG9CQUFvQjthQUMzQztpQkFDSSxFQUFDLGNBQWM7Z0JBQ2hCLE1BQU0sSUFBSSw0QkFBYyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQztnQkFDbkMsSUFBSSxDQUFDLElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDLGFBQWEsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLGdCQUFnQjtnQkFDNUQsSUFBSSxDQUFDLFNBQVMsR0FBRyxDQUFDLENBQUMsQ0FBQyx3QkFBd0I7YUFDL0M7WUFDTCxVQUFVO1NBQ1Q7SUFFTCxDQUFDO0NBQ0o7QUFoQ0Qsa0NBZ0NDIn0=\",\"assetPath\":\"Assets/Scripts/ChangeLightBulb.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"LightBulbMats\",\"type\":\"UnityEngine.Material[]\",\"isArray\":true,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"mscorlib\",\"name\":\"sec\",\"type\":\"System.Single\",\"isArray\":false,\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"ChangeLightBulb\",\"description\":\"\"},\"isCompiled\":true}"
+  typescriptHash: 14408522b0585d2965ffdc2ddd0aaf02

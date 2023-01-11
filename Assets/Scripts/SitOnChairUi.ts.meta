@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 153e741ebe8025f488fad8ace194001b
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    SitOnChairUi extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    OnTriggerEnter(collider)
+    {\r\n        if (collider.tag == \"Player\") {\r\n            this.canvas.gameObject.SetActive(true);\r\n           
+    console.log(\"sit soon\");\r\n        }\r\n    }\r\n    OnTriggerExit(collider)
+    {\r\n        if (collider.tag == \"Player\") {\r\n            this.canvas.gameObject.SetActive(false);\r\n           
+    console.log(\"good bye\");\r\n        }\r\n    }\r\n}\r\nexports.default = SitOnChairUi;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2l0T25DaGFpclVpLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2l0T25DaGFpclVpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsaURBQXFEO0FBRXJELE1BQXFCLFlBQWEsU0FBUSxxQ0FBcUI7SUFJM0QsY0FBYyxDQUFDLFFBQVE7UUFDbkIsSUFBSSxRQUFRLENBQUMsR0FBRyxJQUFJLFFBQVEsRUFBRTtZQUMxQixJQUFJLENBQUMsTUFBTSxDQUFDLFVBQVUsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7WUFDdkMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxVQUFVLENBQUMsQ0FBQztTQUMzQjtJQUVMLENBQUM7SUFFRCxhQUFhLENBQUMsUUFBUTtRQUNsQixJQUFJLFFBQVEsQ0FBQyxHQUFHLElBQUksUUFBUSxFQUFFO1lBQzFCLElBQUksQ0FBQyxNQUFNLENBQUMsVUFBVSxDQUFDLFNBQVMsQ0FBQyxLQUFLLENBQUMsQ0FBQztZQUN4QyxPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsQ0FBQyxDQUFDO1NBQzNCO0lBQ0wsQ0FBQztDQUVKO0FBbkJELCtCQW1CQyJ9","assetPath":"Assets/Scripts/SitOnChairUi.ts","manifest":{"properties":[{"assembly":"UnityEngine.UIModule","name":"canvas","type":"UnityEngine.Canvas","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"SitOnChairUi","description":""},"isCompiled":true}'
+  typescriptHash: 2bbadf2cbc19f49d78881308de7204d6
